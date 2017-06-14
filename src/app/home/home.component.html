@@ -1,0 +1,891 @@
+<section class="add">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="ealans-add">
+                    <img src="../../assets/images/ads.jpg">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section *ngIf="mainNews.length>0" class="first-sec-news">
+    <div class="container">
+        <div class="row">
+            <div class="item-first-sec-news">
+                <div class="col-md-5">
+                    <div class="first-news-live">
+                        <div class="news-img-live">
+                            <a [routerLink]="['news', mainNews[0].id]"><img src="{{universal.server}}/images/{{mainNews[0]?.images[0].name}}"></a>
+                        </div>
+                        <div class="news-img-text">
+                            <a [routerLink]="['news', mainNews[0].id]"><h2>{{mainNews[0]?.title}}</h2></a>
+                            <a [routerLink]="['news', mainNews[0].id]"><p>{{mainNews[0]?.seo_description}}</p></a>
+                        </div>
+                        <div class="inline-news">
+                            <a [routerLink]="['news', mainNews[0].id]">{{mainNews[0]?.category}}</a>
+                        </div>
+                        <div class="live-news">
+                            <a [routerLink]="['news', mainNews[0].id]"><i class="fa fa-signal" aria-hidden="true"></i>{{mainNews[0]?.type}} </a>
+                        </div>
+                    </div> 
+                </div>
+                <div class="col-md-4">
+                    <div class="first-news-live">
+                        <div class="news-img-live">
+                            <a [routerLink]="['news']"><img src="{{universal.server}}/images/{{mainNews[1]?.images[0].name}}"></a>
+                        </div>
+                        <div class="news-img-text">
+                            <a [routerLink]="['news']"><h2>{{mainNews[1]?.title}}</h2></a>
+                            <a [routerLink]="['news']"><p>{{mainNews[1]?.seo_description}}</p></a>
+                        </div>
+                        <div class="important-news">
+                            <a [routerLink]="['news']"><i class="fa fa-rss" aria-hidden="true"></i> {{mainNews[1]?.type}}</a>
+                        </div>
+                    </div> 
+                </div>
+                <div class="col-md-3">
+                    <div class="first-news-live2">
+                        <div class="news-img-live">
+                            <a [routerLink]="['news']"><img src="{{universal.server}}/images/{{mainNews[2]?.images[0].name}}"></a>
+                        </div>
+                        <div class="news-img-text">
+                            <a [routerLink]="['news']"><h2>{{mainNews[2]?.title}}</h2></a>
+                            <a [routerLink]="['news']"><p>{{mainNews[2]?.seo_description}}</p></a>
+                        </div>
+                        <div class="live-news">
+                            <a [routerLink]="['news']"><i class="fa fa-signal" aria-hidden="true"></i> {{mainNews[2]?.type}}</a>
+                        </div>
+                    </div> 
+                </div>
+                <div class="col-md-3">
+                    <div class="first-news-live2">
+                        <div class="news-img-live">
+                            <a [routerLink]="['news']"><img src="{{universal.server}}/images/{{mainNews[3]?.images[0].name}}"></a>
+                        </div>
+                        <div class="news-img-text">
+                            <a [routerLink]="['news']"><h2>{{mainNews[3]?.title}}</h2></a>
+                            <a [routerLink]="['news']"><p>{{mainNews[3]?.seo_description}}</p></a>
+                        </div>
+                        <div class="live-news">
+                            <a [routerLink]="['news']"><i class="fa fa-signal" aria-hidden="true"></i> {{mainNews[3]?.type}}</a>
+                        </div>
+                    </div> 
+                </div>
+            </div>
+        </div> 
+    </div>
+</section>
+<section class="add">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="ealans-add">
+                    <img src="../../assets/images/ads.jpg">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section *ngIf="fiveNews.length>0" class="secand-sec-news">
+    <div class="container">
+        <div class="row">
+            <div class="item-secand-sec-news">
+                <div *ngFor="let item of fiveNews" class="col-md-3-yopu">
+                    <div class="secand-news-live">
+                        <div class="secand-news-img-live">
+                            <a [routerLink]="['news']"><img src="{{universal.server}}/images/{{item.images[0].name}}"></a>
+                        </div>
+                        <div class="inline-news">
+                            <a href="#">{{item?.category}}</a>
+                        </div>
+                    </div> 
+                </div>
+            </div>
+        </div> 
+    </div>
+</section>
+<section class="therd-sec-news">
+    <div class="container">
+        <div class="row">
+            <div class="therd-sec-news-item">
+                <div class="col-md-4">
+                    <div class="first-item-therd-sec">
+                        <div class="first-item-therd-sec-ads">
+                            <a href="#"><img src="{{universal.server}}/images/ea.jpg"></a>
+                        </div>
+                        <div class="first-item-therd-sec-ads">
+                            <a href="#"><img src="{{universal.server}}/images/ea.jpg"></a>
+                        </div>
+                        <div class="first-item-therd-sec-ads">
+                            <a href="#"><img src="{{universal.server}}/images/ea.jpg"></a>
+                        </div>
+                        <div class="first-item-therd-sec-ads">
+                            <a href="#"><img src="{{universal.server}}/images/ea.jpg"></a>
+                        </div>
+                        <div class="first-item-therd-sec-ads">
+                            <a href="#"><img src="{{universal.server}}/images/ea.jpg"></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card-news">
+                        <h2>بطاقات شاشة</h2>
+                        <p>قم بالكتابة هنا قم بالكتابة هنا قم بالكتابة هنا</p>
+                        <a href="#" class="btn-w">انشاء بطاقة<i class="fa fa-cloud-upload" aria-hidden="true"></i></a>
+                        <div class="card-news2">
+                            <a href="#"><img src="../../assets/images/card.png"></a>
+                        </div>
+                    </div>
+                </div>
+                <div *ngIf="restNews.length>0" class="col-md-5">
+                    <div class="left-item-therd-sec">
+                        <div class="first-left-item-therd-sec">
+                            <a href="#">
+                                <div class="img-first-left-item-therd">
+                                    <img src="{{universal.server}}/images/{{restNews[0]?.images[0].name}}">
+                                </div>
+                                <div class="text-first-left-item-therd">
+                                    <p innerHTML={{restNews[0]?.title}}></p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="sec-left-item-therd-sec">
+                            <a href="#">
+                                <div class="img-first-left-item-therd">
+                                    <img src="{{universal.server}}/images/{{restNews[1]?.images[0].name}}">
+                                </div>
+                                <div class="text-first-left-item-therd">
+                                    <p innerHTML={{restNews[1]?.title}}></p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="first-left-item-therd-sec">
+                            <a href="#">
+                                <div class="img-first-left-item-therd">
+                                    <img src="{{universal.server}}/images/{{restNews[2]?.images[0].name}}">
+                                </div>
+                                <div class="text-first-left-item-therd">
+                                    <p innerHTML={{restNews[2]?.title}}></p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="sec-left-item-therd-sec">
+                            <a href="#">
+                                <div class="img-first-left-item-therd">
+                                    <img src="{{universal.server}}/images/{{restNews[3]?.images[0].name}}">
+                                </div>
+                                <div class="text-first-left-item-therd">
+                                    <p innerHTML={{restNews[3]?.title}}></p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="first-left-item-therd-sec">
+                            <a href="#">
+                                <div class="img-first-left-item-therd">
+                                    <img src="{{universal.server}}/images/{{restNews[4]?.images[0].name}}">
+                                </div>
+                                <div class="text-first-left-item-therd">
+                                    <p innerHTML={{restNews[4]?.title}}></p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<section class="five-sec">
+    <div class="container">
+        <div class="row">
+            <app-right-side></app-right-side>
+            <div class="col-md-8">
+                <div class="estfta">
+                    <div class="col-md-8 col-md-offset-4">
+                        <div class="estfta-item">
+                            <h2>استفساء شاشة</h2>
+                            <h3>استفساء شاشةاستفساء شاشةاستفساء شاشةاستفساء شاشةاستفساء شاشةاستفساء شاشةاستفساء شاشةاستفساء شاشة</h3>
+                            <div class="estfta-items">
+                                <a href="#">نعم : شاشة نت</a>
+                                <a href="#">نعم : شاشة نت</a>
+                                <a href="#">نعم : شاشة نت</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item-next">
+                    <div class="row">
+                    <div class="col-md-12 col-sm-12 col-xs-12">
+                        <div class="local-news">
+                            <div class="header-local-news">
+                                <a href="#"><h2>اخبار محليه</h2></a>
+                            </div>
+                            <div *ngIf="localNews.length>0" class="all-local-news">
+                                    <div class="col-md-6">
+                                        <div class="left-local-news">
+                                            <a href="#">
+                                                <div class="first-news-local">
+                                                    <div class="img-first-news-local">
+                                                        <img src="{{universal.server}}/images/{{localNews[0]?.images[0]?.name}}">
+                                                    </div>
+                                                    <div class="text-first-news-local">
+                                                        <h2>{{localNews[0]?.title}}</h2>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                            <div class="sec-news-local">
+                                                <div class="media">
+                                                    <a class="media-left" href="#">
+                                                        <img class="media-object" src="{{universal.server}}/images/{{localNews[2]?.images[0].name}}">
+                                                    </a>
+                                                    <div class="media-body">
+                                                        <a href="#"><h4 class="media-heading">{{localNews[2]?.title}}</h4></a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="sec-news-local">
+                                                <div class="media">
+                                                    <a class="media-left" href="#">
+                                                        <img class="media-object" src="{{universal.server}}/images/{{localNews[4]?.images[0].name}}">
+                                                    </a>
+                                                    <div class="media-body">
+                                                        <a href="#"><h4 class="media-heading">{{localNews[4]?.title}}</h4></a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="left-local-newss">
+                                            <a href="#">
+                                                <div class="first-news-local">
+                                                    <div class="img-first-news-local">
+                                                        <img src="{{universal.server}}/images/{{localNews[1]?.images[0].name}}">
+                                                    </div>
+                                                    <div class="text-first-news-local">
+                                                        <h2>{{localNews[1]?.title}}</h2>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                            <div class="sec-news-local">
+                                                <div class="media">
+                                                    <a class="media-left" href="#">
+                                                        <img class="media-object" src="{{universal.server}}/images/{{localNews[3]?.images[0].name}}">
+                                                    </a>
+                                                    <div class="media-body">
+                                                        <a href="#"><h4 class="media-heading">{{localNews[3]?.title}}</h4></a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="sec-news-local">
+                                                <div class="media">
+                                                    <a class="media-left" href="#">
+                                                        <img class="media-object" src="{{universal.server}}/images/{{localNews[5]?.images[0].name}}">
+                                                    </a>
+                                                    <div class="media-body">
+                                                        <a href="#"><h4 class="media-heading">{{localNews[5]?.title}}</h4></a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+<!--
+                        <div class="col-md-2">
+                            <div class="ealans2-add">
+                                <img src="images/ea3.jpg">
+                            </div>
+                        </div>
+-->
+                    </div>
+                </div>
+                <div class="local-news">
+                    <div class="header-intronational-news">
+                        <h2>اخبار عالمية</h2>
+                    </div>
+                    <div class="all-local-news">
+                                <div class="col-md-6">
+                                    <div class="left-local-news">
+                                        <a href="#">
+                                            <div class="first-news-local">
+                                                <div class="img-first-news-local">
+                                                    <img src="{{universal.server}}/images/{{internatinalNews[0]?.images[0].name}}">
+                                                </div>
+                                                <div class="text-first-news-local">
+                                                    <h2>{{internatinalNews[0]?.title}}</h2>
+                                                </div>
+                                            </div>
+                                        </a>
+                                        <div class="sec-news-local">
+                                            <div class="media">
+                                                <a class="media-left" href="#">
+                                                    <img class="media-object" src="{{universal.server}}/images/{{internatinalNews[2]?.images[0].name}}">
+                                                </a>
+                                                <div class="media-body">
+                                                    <a href="#"><h4 class="media-heading">{{internatinalNews[2]?.title}}</h4></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="sec-news-local">
+                                            <div class="media">
+                                                <a class="media-left" href="#">
+                                                    <img class="media-object" src="{{universal.server}}/images/{{internatinalNews[4]?.images[0].name}}">
+                                                </a>
+                                                <div class="media-body">
+                                                    <a href="#"><h4 class="media-heading">{{internatinalNews[4]?.title}}</h4></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="left-local-newss">
+                                        <a href="#">
+                                            <div class="first-news-local">
+                                                <div class="img-first-news-local">
+                                                    <img src="{{universal.server}}/images/{{internatinalNews[1]?.images[0].name}}">
+                                                </div>
+                                                <div class="text-first-news-local">
+                                                    <h2>{{internatinalNews[1]?.title}}</h2>
+                                                </div>
+                                            </div>
+                                        </a>
+                                        <div class="sec-news-local">
+                                            <div class="media">
+                                                <a class="media-left" href="#">
+                                                    <img class="media-object" src="{{universal.server}}/images/{{internatinalNews[3]?.images[0].name}}">
+                                                </a>
+                                                <div class="media-body">
+                                                    <a href="#"><h4 class="media-heading">{{internatinalNews[3]?.title}}</h4></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="sec-news-local">
+                                            <div class="media">
+                                                <a class="media-left" href="#">
+                                                    <img class="media-object" src="{{universal.server}}/images/{{internatinalNews[5]?.images[0].name}}">
+                                                </a>
+                                                <div class="media-body">
+                                                    <a href="#"><h4 class="media-heading">{{internatinalNews[5]?.title}}</h4></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                        </div>
+                </div>
+                <div class="local-news">
+                    <div class="header-alrena-news">
+                        <h2>اخبار الرينة</h2>
+                    </div>
+                    <div class="all-local-news">
+                                <div class="col-md-6">
+                                    <div class="left-local-news">
+                                        <a href="#">
+                                            <div class="first-news-local">
+                                                <div class="img-first-news-local">
+                                                    <img src="images/1.jpg">
+                                                </div>
+                                                <div class="text-first-news-local">
+                                                    <h2>الاردن تنفي ما نسب للملك حول التحالف الاسلامي</h2>
+                                                </div>
+                                            </div>
+                                        </a>
+                                        <div class="sec-news-local">
+                                            <div class="media">
+                                                <a class="media-left" href="#">
+                                                    <img class="media-object" src="images/2.jpg">
+                                                </a>
+                                                <div class="media-body">
+                                                    <a href="#"><h4 class="media-heading">الاردن تنفي ما نسب للملك حول التحالف الاسلامي</h4></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="sec-news-local">
+                                            <div class="media">
+                                                <a class="media-left" href="#">
+                                                    <img class="media-object" src="images/3.jpg">
+                                                </a>
+                                                <div class="media-body">
+                                                    <a href="#"><h4 class="media-heading">الاردن تنفي ما نسب للملك حول التحالف الاسلامي</h4></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="left-local-newss">
+                                        <a href="#">
+                                            <div class="first-news-local">
+                                                <div class="img-first-news-local">
+                                                    <img src="images/4.jpg">
+                                                </div>
+                                                <div class="text-first-news-local">
+                                                    <h2>الاردن تنفي ما نسب للملك حول التحالف الاسلامي</h2>
+                                                </div>
+                                            </div>
+                                        </a>
+                                        <div class="sec-news-local">
+                                            <div class="media">
+                                                <a class="media-left" href="#">
+                                                    <img class="media-object" src="images/5.jpg">
+                                                </a>
+                                                <div class="media-body">
+                                                    <a href="#"><h4 class="media-heading">الاردن تنفي ما نسب للملك حول التحالف الاسلامي</h4></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="sec-news-local">
+                                            <div class="media">
+                                                <a class="media-left" href="#">
+                                                    <img class="media-object" src="images/6.jpg">
+                                                </a>
+                                                <div class="media-body">
+                                                    <a href="#"><h4 class="media-heading">الاردن تنفي ما نسب للملك حول التحالف الاسلامي</h4></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                        </div>
+                </div>
+                <div class="cetion-div">
+                    <div class="first-item-dec">
+                        <div class="img-first-dec">
+                            <img src="images/f1.jpg">
+                        </div>
+                        <div class="text-first-dec">
+                            <a href="#"><h2>انتبهي ... المايه ساخنة المياه ساخنة</h2></a>
+                        </div>
+                    </div>
+                    <div class="first-item-dec">
+                        <div class="img-first-dec">
+                            <img src="images/f2.jpg">
+                        </div>
+                        <div class="text-first-dec">
+                            <a href="#"><h2>انتبهي ... المايه ساخنة المياه ساخنة</h2></a>
+                        </div>
+                    </div>
+                    <div class="first-item-dec">
+                        <div class="img-first-dec">
+                            <img src="images/f3.jpg">
+                        </div>
+                        <div class="text-first-dec">
+                            <a href="#"><h2>انتبهي ... المايه ساخنة المياه ساخنة</h2></a>
+                        </div>
+                    </div>
+                    <div class="first-item-dec">
+                        <div class="img-first-dec">
+                            <img src="images/f4.jpg">
+                        </div>
+                        <div class="text-first-dec">
+                            <a href="#"><h2>انتبهي ... المايه ساخنة المياه ساخنة</h2></a>
+                        </div>
+                    </div>
+                    <div class="image-dec-ap">
+                        <img src="images/dec.png">
+                    </div>
+                </div>
+                <div class="local-news">
+                    <div class="header-israel-news">
+                        <h2>اسرائلية وفلسطينة</h2>
+                    </div>
+                    <div class="all-israel-news">
+                        <a href="#">
+                            <div class="first-news-israel">
+                                <div class="img-first-news-israel">
+                                    <img src="images/1.jpg">
+                                </div>
+                                <div class="text-first-news-israel">
+                                    <h2>الماء اساخن يضر بالشعر الناعم</h2>
+                                    <p>ان كانت تعتقدين ان الصوم في شهر رمضان يضر بالحمل فهذا غير صحيح</p>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="#">
+                            <div class="first-news-israel2">
+                                <div class="img-first-news-israel">
+                                    <img src="images/2.jpg">
+                                </div>
+                                <div class="text-first-news-israel">
+                                    <h2>الماء اساخن يضر بالشعر الناعم</h2>
+                                    <p>ان كانت تعتقدين ان الصوم في شهر رمضان يضر بالحمل فهذا غير صحيح</p>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="#">
+                            <div class="first-news-israel">
+                                <div class="img-first-news-israel">
+                                    <img src="images/3.jpg">
+                                </div>
+                                <div class="text-first-news-israel">
+                                    <h2>الماء اساخن يضر بالشعر الناعم</h2>
+                                    <p>ان كانت تعتقدين ان الصوم في شهر رمضان يضر بالحمل فهذا غير صحيح</p>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="#">
+                            <div class="first-news-israel2">
+                                <div class="img-first-news-israel">
+                                    <img src="images/4.jpg">
+                                </div>
+                                <div class="text-first-news-israel">
+                                    <h2>الماء اساخن يضر بالشعر الناعم</h2>
+                                    <p>ان كانت تعتقدين ان الصوم في شهر رمضان يضر بالحمل فهذا غير صحيح</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="local-news">
+                    <div class="header-israel2-news">
+                        <h2>اسرائلية وفلسطينة</h2>
+                    </div>
+                    <div class="all-israel-news">
+                        <a href="#">
+                            <div class="first-news-israel">
+                                <div class="img-first-news-israel">
+                                    <img src="images/5.jpg">
+                                </div>
+                                <div class="text-first-news-israel">
+                                    <h2>الماء اساخن يضر بالشعر الناعم</h2>
+                                    <p>ان كانت تعتقدين ان الصوم في شهر رمضان يضر بالحمل فهذا غير صحيح</p>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="#">
+                            <div class="first-news-israel2">
+                                <div class="img-first-news-israel">
+                                    <img src="images/6.jpg">
+                                </div>
+                                <div class="text-first-news-israel">
+                                    <h2>الماء اساخن يضر بالشعر الناعم</h2>
+                                    <p>ان كانت تعتقدين ان الصوم في شهر رمضان يضر بالحمل فهذا غير صحيح</p>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="#">
+                            <div class="first-news-israel">
+                                <div class="img-first-news-israel">
+                                    <img src="images/7.jpg">
+                                </div>
+                                <div class="text-first-news-israel">
+                                    <h2>الماء اساخن يضر بالشعر الناعم</h2>
+                                    <p>ان كانت تعتقدين ان الصوم في شهر رمضان يضر بالحمل فهذا غير صحيح</p>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="#">
+                            <div class="first-news-israel2">
+                                <div class="img-first-news-israel">
+                                    <img src="images/8.jpg">
+                                </div>
+                                <div class="text-first-news-israel">
+                                    <h2>الماء اساخن يضر بالشعر الناعم</h2>
+                                    <p>ان كانت تعتقدين ان الصوم في شهر رمضان يضر بالحمل فهذا غير صحيح</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="local-news">
+                    <div class="header-israel3-news">
+                        <h2>اسرائلية وفلسطينة</h2>
+                    </div>
+                    <div class="all-israel-news">
+                        <a href="#">
+                            <div class="first-news-israel">
+                                <div class="img-first-news-israel">
+                                    <img src="images/1.jpg">
+                                </div>
+                                <div class="text-first-news-israel">
+                                    <h2>الماء اساخن يضر بالشعر الناعم</h2>
+                                    <p>ان كانت تعتقدين ان الصوم في شهر رمضان يضر بالحمل فهذا غير صحيح</p>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="#">
+                            <div class="first-news-israel2">
+                                <div class="img-first-news-israel">
+                                    <img src="images/2.jpg">
+                                </div>
+                                <div class="text-first-news-israel">
+                                    <h2>الماء اساخن يضر بالشعر الناعم</h2>
+                                    <p>ان كانت تعتقدين ان الصوم في شهر رمضان يضر بالحمل فهذا غير صحيح</p>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="#">
+                            <div class="first-news-israel">
+                                <div class="img-first-news-israel">
+                                    <img src="images/3.jpg">
+                                </div>
+                                <div class="text-first-news-israel">
+                                    <h2>الماء اساخن يضر بالشعر الناعم</h2>
+                                    <p>ان كانت تعتقدين ان الصوم في شهر رمضان يضر بالحمل فهذا غير صحيح</p>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="#">
+                            <div class="first-news-israel2">
+                                <div class="img-first-news-israel">
+                                    <img src="images/4.jpg">
+                                </div>
+                                <div class="text-first-news-israel">
+                                    <h2>الماء اساخن يضر بالشعر الناعم</h2>
+                                    <p>ان كانت تعتقدين ان الصوم في شهر رمضان يضر بالحمل فهذا غير صحيح</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="local-news">
+                    <div class="header-sport-news">
+                        <h2>اسرائلية وفلسطينة</h2>
+                    </div>
+                    <div class="all-israel-news">
+                        <a href="#">
+                            <div class="first-news-israel">
+                                <div class="img-first-news-israel">
+                                    <img src="images/5.jpg">
+                                </div>
+                                <div class="text-first-news-israel">
+                                    <h2>الماء اساخن يضر بالشعر الناعم</h2>
+                                    <p>ان كانت تعتقدين ان الصوم في شهر رمضان يضر بالحمل فهذا غير صحيح</p>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="#">
+                            <div class="first-news-israel2">
+                                <div class="img-first-news-israel">
+                                    <img src="images/6.jpg">
+                                </div>
+                                <div class="text-first-news-israel">
+                                    <h2>الماء اساخن يضر بالشعر الناعم</h2>
+                                    <p>ان كانت تعتقدين ان الصوم في شهر رمضان يضر بالحمل فهذا غير صحيح</p>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="#">
+                            <div class="first-news-israel">
+                                <div class="img-first-news-israel">
+                                    <img src="images/7.jpg">
+                                </div>
+                                <div class="text-first-news-israel">
+                                    <h2>الماء اساخن يضر بالشعر الناعم</h2>
+                                    <p>ان كانت تعتقدين ان الصوم في شهر رمضان يضر بالحمل فهذا غير صحيح</p>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="#">
+                            <div class="first-news-israel2">
+                                <div class="img-first-news-israel">
+                                    <img src="images/8.jpg">
+                                </div>
+                                <div class="text-first-news-israel">
+                                    <h2>الماء اساخن يضر بالشعر الناعم</h2>
+                                    <p>ان كانت تعتقدين ان الصوم في شهر رمضان يضر بالحمل فهذا غير صحيح</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="item-next">
+                    <div class="row">
+                    <div class="col-md-12 col-sm-12 col-xs-12">
+                        <div class="local-news">
+                            <div class="header-local-news">
+                                <a href="#"><h2>اخبار محليه</h2></a>
+                            </div>
+                            <div class="all-local-news">
+                                    <div class="col-md-6">
+                                        <div class="left-local-news">
+                                            <a href="#">
+                                                <div class="first-news-local">
+                                                    <div class="img-first-news-local">
+                                                        <img src="images/1.jpg">
+                                                    </div>
+                                                    <div class="text-first-news-local">
+                                                        <h2>الاردن تنفي ما نسب للملك حول التحالف الاسلامي</h2>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                            <div class="sec-news-local">
+                                                <div class="media">
+                                                    <a class="media-left" href="#">
+                                                        <img class="media-object" src="images/2.jpg">
+                                                    </a>
+                                                    <div class="media-body">
+                                                        <a href="#"><h4 class="media-heading">الاردن تنفي ما نسب للملك حول التحالف الاسلامي</h4></a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="sec-news-local">
+                                                <div class="media">
+                                                    <a class="media-left" href="#">
+                                                        <img class="media-object" src="images/3.jpg">
+                                                    </a>
+                                                    <div class="media-body">
+                                                        <a href="#"><h4 class="media-heading">الاردن تنفي ما نسب للملك حول التحالف الاسلامي</h4></a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="left-local-newss">
+                                            <a href="#">
+                                                <div class="first-news-local">
+                                                    <div class="img-first-news-local">
+                                                        <img src="images/4.jpg">
+                                                    </div>
+                                                    <div class="text-first-news-local">
+                                                        <h2>الاردن تنفي ما نسب للملك حول التحالف الاسلامي</h2>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                            <div class="sec-news-local">
+                                                <div class="media">
+                                                    <a class="media-left" href="#">
+                                                        <img class="media-object" src="images/5.jpg">
+                                                    </a>
+                                                    <div class="media-body">
+                                                        <a href="#"><h4 class="media-heading">الاردن تنفي ما نسب للملك حول التحالف الاسلامي</h4></a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="sec-news-local">
+                                                <div class="media">
+                                                    <a class="media-left" href="#">
+                                                        <img class="media-object" src="images/6.jpg">
+                                                    </a>
+                                                    <div class="media-body">
+                                                        <a href="#"><h4 class="media-heading">الاردن تنفي ما نسب للملك حول التحالف الاسلامي</h4></a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+<!--
+                        <div class="col-md-2">
+                            <div class="ealans2-add">
+                                <img src="images/ea3.jpg">
+                            </div>
+                        </div>
+-->
+                    </div>
+                </div>
+                <div class="local-news">
+                    <div class="header-sport-news">
+                        <h2>اسرائلية وفلسطينة</h2>
+                    </div>
+                    <div class="all-israel-news">
+                        <a href="#">
+                            <div class="first-news-israel">
+                                <div class="img-first-news-israel">
+                                    <img src="images/5.jpg">
+                                </div>
+                                <div class="text-first-news-israel">
+                                    <h2>الماء اساخن يضر بالشعر الناعم</h2>
+                                    <p>ان كانت تعتقدين ان الصوم في شهر رمضان يضر بالحمل فهذا غير صحيح</p>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="#">
+                            <div class="first-news-israel2">
+                                <div class="img-first-news-israel">
+                                    <img src="images/imag2.jpg">
+                                </div>
+                                <div class="text-first-news-israel">
+                                    <h2>الماء اساخن يضر بالشعر الناعم</h2>
+                                    <p>ان كانت تعتقدين ان الصوم في شهر رمضان يضر بالحمل فهذا غير صحيح</p>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="#">
+                            <div class="first-news-israel">
+                                <div class="img-first-news-israel">
+                                    <img src="images/mia.jpg">
+                                </div>
+                                <div class="text-first-news-israel">
+                                    <h2>الماء اساخن يضر بالشعر الناعم</h2>
+                                    <p>ان كانت تعتقدين ان الصوم في شهر رمضان يضر بالحمل فهذا غير صحيح</p>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="#">
+                            <div class="first-news-israel2">
+                                <div class="img-first-news-israel">
+                                    <img src="images/2.jpg">
+                                </div>
+                                <div class="text-first-news-israel">
+                                    <h2>الماء اساخن يضر بالشعر الناعم</h2>
+                                    <p>ان كانت تعتقدين ان الصوم في شهر رمضان يضر بالحمل فهذا غير صحيح</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="footer-item-all">
+                    <div class="col-md-8">
+                        <div class="img-footer-item">
+                            <img src="images/logo2.png">
+                        </div>
+                        <div class="ul-item-footesr">
+                            <ul>
+                                <li><a href="#"><i class="fa fa-youtube" aria-hidden="true"></i></a></li>
+                                <li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+                                <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                                <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                                <li><a href="#"><i class="fa fa-apple" aria-hidden="true"></i></a></li>
+                                <li><a href="#"><i class="fa fa-android" aria-hidden="true"></i></a></li>
+                            </ul>
+                        </div>
+                        <div class="ul-item-footer">
+                            <ul>
+                                <li><a href="#">الرئيسية</a></li>
+                                <li><a href="#">اخبار محلية</a></li>
+                                <li><a href="#">اخبار عالمية</a></li>
+                                <li><a href="#">اخبار الرينة</a></li>
+                                <li><a href="#">القدس و الاقصي</a></li>
+                                <li><a href="#">اسرائيلية وفلسطينة</a></li>
+                                <li><a href="#">مدارس وجامعتا</a></li>
+                                <li><a href="#">رياضة</a></li>
+                                <li><a href="#">منوعات</a></li>
+                                <li><a href="#">صحة</a></li>
+                                <li><a href="#">مطبخ</a></li>
+                                <li><a href="#">مقالات سيارات</a></li>
+                                <li><a href="#">علوم وتكنولوجيا</a></li>
+                                <li><a href="#">سياحة</a></li>
+                                <li><a href="#">مجتمع</a></li>
+                                <li><a href="#">القرآن الكريم</a></li>
+                            </ul>
+                        </div>
+                        <div class="contant-footer">
+                            <h2>جميع الحقوق محفوظة © 2016 موقع شاشة</h2>
+                        </div>
+                    </div>
+                    <div class="col-md-4 hidden-sm hidden-xs"> 
+                        <div class="footer-Social">
+                            <a href="#"><img src="images/phone.png"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

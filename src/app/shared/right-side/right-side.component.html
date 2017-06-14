@@ -1,0 +1,108 @@
+<div class="col-md-4">
+    <div class="first-item-therd-sec-ads">
+        <a href="#"><img src="../../assets/images/ea.jpg"></a>
+    </div>
+    <div class="first-item-therd-sec-ads">
+        <a href="#"><img src="../../assets/images/ea.jpg"></a>
+    </div>
+    <div class="first-item-therd-sec-ads">
+        <a href="#"><img src="../../assets/images/ea.jpg"></a>
+    </div>
+    <div class="first-item-therd-sec-ads">
+        <a href="#"><img src="../../assets/images/ea.jpg"></a>
+    </div>
+    <div class="first-item-therd-sec-ads">
+        <a href="#"><img src="../../assets/images/ea.jpg"></a>
+    </div>
+                        <div class="first-item-therd-sec-ads">
+        <a href="#"><img src="../../assets/images/ea.jpg"></a>
+    </div>
+    <div *ngIf="degrees.length>0" class="first-item-therd-sec-jaw">
+        <div class="head-first-item">
+            <h2>حالة الطقس</h2>
+        </div>
+        <div class="day-first-item">
+            <img src="http://openweathermap.org/img/w/{{degrees[0][2]}}.png">                      
+            <h2>{{degrees[0][1]}}</h2>
+        </div>
+        <ul>
+            <li *ngFor="let item of degrees">
+                <a href="#">
+                    <div class="item-clouds"><img src="http://openweathermap.org/img/w/{{item[2]}}.png" alt="">
+                    </div> {{arabicDays[item[0]]}} <span class="pull-left">{{item[1]}}</span>
+                </a>
+            </li>
+        </ul>
+    </div>
+    <div class="item-social">
+        <a href="#" class="facebook-btn">
+            <i class="fa fa-facebook" aria-hidden="true"></i>
+        </a>
+        <a href="#" class="youtube-btn">
+            <i class="fa fa-youtube" aria-hidden="true"></i>
+        </a>
+        <a href="#" class="google-btn">
+            <i class="fa fa-google-plus" aria-hidden="true"></i>
+        </a>
+        <a href="#" class="twitter-btn">
+            <i class="fa fa-twitter" aria-hidden="true"></i>
+        </a>
+    </div>
+    <div class="first-item-therd-sec-jaw">
+        <div class="head-first-item">
+            <h2>اسعار العملات</h2>
+        </div>
+        <div class="dollar-first-item">
+            <div class="dollar-day">
+                <h2>{{currency.NIS_USD}}</h2>
+                <h3>دولار امريكي</h3>
+            </div>
+            <div class="item-dollar-day">
+                <div class="first-item-dollar-day">
+                    <h2>{{currency.NIS_EUR}}</h2>
+                    <h3>يورو</h3>
+                </div>
+                <div class="first-item-dollar-day">
+                    <h2>{{currency.NIS_EGP}}</h2>
+                    <h3>جنيه</h3>
+                </div>
+                <div class="first-item-dollar-day">
+                    <h2>{{currency.NIS_JOD}}</h2>
+                    <h3>دينار</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="first-item-therd-sec-jaw">
+        <div class="head-first-item">
+            <h2>مواقيت الصلاة</h2>
+        </div>
+        <div class="azan-first-item">
+            <div class="azan-day">
+            </div>
+            <div class="item-azan-day">
+                <div class="first-item-azan-day">
+                    <h3>الفجر</h3>
+                    <h2>{{prays.fajr}}</h2>
+                </div>
+                <div class="first-item-azan-day">
+                    <h3>الضهر</h3>
+                    <h2>{{prays.dhuhr}}</h2>
+                </div>
+                <div class="first-item-azan-day">
+                    <h3>العصر</h3>
+                    <h2>{{prays.asr}}</h2>
+                </div>
+                <div class="first-item-azan-day">
+                    <h3>المغرب</h3>
+                    <h2>{{prays.maghrib}}</h2>
+                </div>
+                <div class="first-item-azan-day">
+                    <h3>العشاء</h3>
+                    <h2>{{prays.isha}}</h2>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>

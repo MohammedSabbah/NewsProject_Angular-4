@@ -1,0 +1,170 @@
+<section class="scand-head">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="item-scand-head">
+                    <ul class="head-menu nav navbar-nav avbar-right">
+                        <li><a href="#">26 يونيو 2015 <span>15:04:22</span></a></li>
+                        <li><a (click)="searchOn()" href="#" class="sport-btn14"><i class="fa fa-search" aria-hidden="true"></i></a></li>
+                        <li><a (mouseover)="tempOn()" (mouseleave)="tempOut()" href="#" class="sport-btn11"><i class="fa fa-cloud" aria-hidden="true"></i> 20</a></li>
+                        <li><a (mouseover)="prayOn()" (mouseleave)="prayOut()" href="#" class="sport-btn12"><i class="fa fa-moon-o" aria-hidden="true"></i> اذان العشاء</a></li>
+                        <li><a (mouseover)="currOn()" (mouseleave)="currOut()" href="#" class="sport-btn13"><i class="fa fa-usd" aria-hidden="true"></i> اسعار العملات</a></li>
+                    </ul>
+                    <ul class="head-menus nav navbar-nav avbar-left">
+                        <li><a href="#">للاعلان في الموقع</a></li>
+                        <li><a href="#"><i class="fa fa-apple" aria-hidden="true"></i></a></li>
+                        <li><a href="#"><i class="fa fa-android" aria-hidden="true"></i></a></li>
+                        <li><a href="#"><i class="fa fa-youtube" aria-hidden="true"></i></a></li>
+                        <li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+                        <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                        <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <section class="sport-head-black" [ngStyle]="{'display': display()}">
+        <div class="container">
+            <div class="col-md-12">
+                <div class="black-secand-sec-news" id="sport-secand11" [ngStyle]="{'display': isCurrency()}">
+                    <div class="col-md-4">
+                        <div class="secand-news-live-black">
+                            <h2>دولار امريكي</h2>
+                            <h1>3.7499 $</h1>
+                        </div> 
+                    </div>
+                    <div class="col-md-8">
+                        <div class="col-md-3">
+                            <div class="secand-news-live-black1">
+                                <h2>دولار امريكي</h2>
+                                <h1>3.7499 $</h1>
+                            </div> 
+                        </div> 
+                        <div class="col-md-3">
+                            <div class="secand-news-live-black1">
+                                <h2>دولار امريكي</h2>
+                                <h1>3.7499 $</h1>
+                            </div> 
+                        </div> 
+                        <div class="col-md-3">
+                            <div class="secand-news-live-black1">
+                                <h2>دولار امريكي</h2>
+                                <h1>3.7499 $</h1>
+                            </div> 
+                        </div> 
+                        <div class="col-md-3">
+                            <div class="secand-news-live-black1">
+                                <h2>دولار امريكي</h2>
+                                <h1>3.7499 $</h1>
+                            </div> 
+                        </div> 
+                    </div>
+                </div>
+                <div class="black-secand-sec-news" id="sport-secand12" [ngStyle]="{'display': isPray()}">
+                    <div class="col-md-4">
+                        <div class="col-md-6">
+                            <div class="img-black-sec">
+                                <img src="../../../assets/images/azans.png">
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="text-black-sec">
+                                <h3>مكة المكرمة</h3>
+                                <h3>آذان الفجر</h3>
+                                <h2>04:09</h2>
+                            </div> 
+                        </div> 
+                    </div>
+                    <div class="col-md-8">
+                        <div class="black-secand-sec-newssa">
+                            <div class="secand-news-live-black1">
+                                <h2>الفجر</h2>
+                                <h1>03:55</h1>
+                                <h1><i class="fa fa-sun-o" aria-hidden="true"></i></h1>
+                            </div> 
+                            <div class="secand-news-live-black1">
+                                <h2>الظهر</h2>
+                                <h1>03:55</h1>
+                                <h1><i class="fa fa-sun-o" aria-hidden="true"></i></h1>
+                            </div> 
+                            <div class="secand-news-live-black1">
+                                <h2>العصر</h2>
+                                <h1>03:55</h1>
+                                <h1><i class="fa fa-sun-o" aria-hidden="true"></i></h1>
+                            </div> 
+                            <div class="secand-news-live-black1">
+                                <h2>المغرب</h2>
+                                <h1>03:55</h1>
+                                <h1><i class="fa fa-sun-o" aria-hidden="true"></i></h1>
+                            </div> 
+                            <div class="secand-news-live-black1">
+                                <h2>العشاء</h2>
+                                <h1>03:55</h1>
+                                <h1><i class="fa fa-moon-o" aria-hidden="true"></i></h1>
+                            </div> 
+                        </div>
+                    </div>
+                </div>
+                <div class="black-secand-sec-news" id="sport-secand13" [ngStyle]="{'display': isTemp()}">
+                    <div class="col-md-4">
+                        <div class="col-md-6">
+                            <div class="img-black-sec">
+                                <img src="../../../assets/images/geam.png">
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="text-black-sec">
+                                <h3>20</h3>
+                                <h2>غائم جزئي مع احتمال سقوط الامطار</h2>
+                            </div> 
+                        </div> 
+                    </div>
+                    <div class="col-md-8">
+                        <div class="black-secand-sec-newssaa">
+                            <div class="secand-news-live-black1">
+                                <h2>السبت</h2>
+                                <h1>23</h1>
+                            </div> 
+                            <div class="secand-news-live-black1">
+                                <h2>الاحد</h2>
+                                <h1>23</h1>
+                            </div> 
+                            <div class="secand-news-live-black1">
+                                <h2>الاثنين</h2>
+                                <h1>23</h1>
+                            </div> 
+                            <div class="secand-news-live-black1">
+                                <h2>الثلاثاء</h2>
+                                <h1>23</h1>
+                            </div> 
+                            <div class="secand-news-live-black1">
+                                <h2>الاربعاء</h2>
+                                <h1>23</h1>
+                            </div> 
+                            <div class="secand-news-live-black1">
+                                <h2>الخميس</h2>
+                                <h1>23</h1>
+                            </div> 
+                            <div class="secand-news-live-black1">
+                                <h2>الجمعة</h2>
+                                <h1>23</h1>
+                            </div> 
+                        </div>
+                    </div>
+                </div>
+                <div class="black-secand-sec-news" id="sport-secand14" [ngStyle]="{'display': isSearch()}">
+                    <div class="col-md-8">
+                        <div class="black-secand-sec-newssaa">
+                            <input type="text" placeholder="ابحث" />
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="black-secand-sec-newssaa">
+                            <a href="#"> ابحث</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</section>

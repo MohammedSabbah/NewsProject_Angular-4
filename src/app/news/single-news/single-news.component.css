@@ -1,0 +1,63 @@
+.comment-user-item ,.comment-user-single{
+        float: right;
+        width: 100%;
+    }
+    .media.reply-medi {
+        padding-right: 40px;
+    }
+    .comment-user-single .media {
+        float: right;
+        width: 100%;
+        border-bottom: 2px solid #f7f7f7;
+        margin-bottom: 20px;
+    }
+    .comment-user-single .media:first-child {
+        float: right;
+        width: 100%;
+        border-bottom: 2px solid #f7f7f7;
+        margin-bottom: 20px;
+        margin-top: 20px;
+    }
+    .comment-user-single .media-middle {
+        float: right;
+        width: 80px;
+        height: 80px;
+        overflow: hidden;
+        margin-left: 10px;
+    }
+    .comment-user-single h4.media-heading {
+        float: right;
+        width: 100%;
+        color: #4bb7df;
+        font-size: 14px;
+    }
+    .comment-user-single h4.media-heading span {
+        color: #979797;
+        font-size: 14px;
+    }
+    .comment-user-single h4.media-heading span i {
+        color: #979797;
+        font-size: 14px;
+        margin-left: 5px;
+    }
+    .comment-user-single .media-body p {
+        float: right;
+        width: 80%;
+        color: #979797;
+        font-size: 14px;
+    }
+    .comment-user-single .answer-btn-d {
+        float: left;
+        width: 20%;
+        margin-top: 35px;
+    }
+    .comment-user-single .answer-btn {
+        color: #4bb7df;
+        font-size: 16px;
+        padding: 2px 10px;
+        width: 50px;
+        text-align: center;
+    }
+    .comment-user-single .media:hover > .media-body {
+        background: transparent;
+    }
