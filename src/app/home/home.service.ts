@@ -63,4 +63,14 @@ export class HomeService {
       )
   }
 
+  getRecipes(num)
+  {
+    return this._http.get(`${this.universal.server}/api/getNumRecipes/${num}`)
+      .map(
+        (res: Response) => {
+          return res.json();
+        }
+      )
+  }
+
 }

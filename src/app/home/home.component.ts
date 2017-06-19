@@ -23,6 +23,7 @@ export class HomeComponent implements OnInit {
   private restNews = [];  
   private localNews = [];
   private internatinalNews = [];
+  private recipes = [];
   
   
 
@@ -36,6 +37,7 @@ export class HomeComponent implements OnInit {
     this.getRestNews();
     this.getLocalNews();
     this.getInternationalNews();
+    this.getRecipes();
   }
 
   getMainNews()
@@ -67,7 +69,7 @@ export class HomeComponent implements OnInit {
 
   getLocalNews()
   {
-    this._serv.getRestNews().subscribe(
+    this._serv.getLocalNews().subscribe(
       (data) => {
         this.localNews = data;
       }
@@ -79,6 +81,15 @@ export class HomeComponent implements OnInit {
     this._serv.getInternationalNews().subscribe(
       (data) => {
         this.internatinalNews = data;
+      }
+    )
+  }
+
+  getRecipes()
+  {
+    this._serv.getRecipes(4).subscribe(
+      (data) => {
+        this.recipes = data;
       }
     )
   }

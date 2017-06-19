@@ -24,6 +24,7 @@ import { VideosComponent } from './videos/videos.component';
 
 import { RightSideComponent } from './shared/right-side/right-side.component'
 import { SharedService } from './shared/shared.service';
+import { FooterComponent } from './shared/footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -34,7 +35,8 @@ import { SharedService } from './shared/shared.service';
     NewsComponent,
     SingleNewsComponent,
     VideosComponent,
-    RightSideComponent
+    RightSideComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,

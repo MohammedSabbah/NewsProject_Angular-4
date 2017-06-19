@@ -5,9 +5,11 @@ import { HomeComponent } from './home/home.component';
 import { NewsComponent } from './news/news.component';
 import { SingleNewsComponent } from './news/single-news/single-news.component';
 
+
 const APP_ROUTES: Routes = [
     { path: '', component: HomeComponent },
     { path: 'news/:id', component: SingleNewsComponent},
+    { path: 'news/category/:id', component: NewsComponent},    
     { path: '**', component: HomeComponent },
     
 ];

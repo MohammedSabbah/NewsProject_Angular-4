@@ -22,4 +22,54 @@ export class NewsService {
         }
       )
   }
+
+  getNewsByCategory(id)
+  {
+    return this._http.get(`${this.universal.server}/api/getNewsByCategory/${id}`)
+      .map(
+        (res: Response) => {
+          return res.json();
+        }
+      )
+  }
+
+  getRelatedNews(id, num)
+  {
+    return this._http.get(`${this.universal.server}/api/getRelatedNews/${id}/${num}`)
+      .map(
+        (res: Response) => {
+          return res.json();
+        }
+      )
+  }
+
+  getLatestNews(num)
+  {
+    return this._http.get(`${this.universal.server}/api/getLatestNews/${num}`)
+      .map(
+        (res: Response) => {
+          return res.json();
+        }
+      )
+  }
+
+  getMostWatchedNews(num)
+  {
+    return this._http.get(`${this.universal.server}/api/getMostWatchedNews/${num}`)
+      .map(
+        (res: Response) => {
+          return res.json();
+        }
+      )
+  }
+
+  getYesterdayNews(num)
+  {
+    return this._http.get(`${this.universal.server}/api/getYesterdayNews/${num}`)
+      .map(
+        (res: Response) => {
+          return res.json();
+        }
+      )
+  }
 }

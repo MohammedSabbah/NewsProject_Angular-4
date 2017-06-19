@@ -61,3 +61,12 @@
     .comment-user-single .media:hover > .media-body {
         background: transparent;
     }
+#otis li {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    display: inline;
+}
+.item-ealan{
+    max-width: 250px;
+}
